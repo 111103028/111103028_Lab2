@@ -1,0 +1,132 @@
+body {color: brown;
+	  background-color: 
+	  lightblue; 
+	  font-family: 
+	  Arial;margin: 0;}
+body header {font-family: Times; 
+			text-align: center; 
+			height: 10em; 
+			background-color: pink; 
+			margin:0; }
+.navbar{
+			display: flex;
+			justify-content: space-around;
+			position: relative ;
+			top:0em;
+			left: 0em;
+			width: auto;
+			text-align: center;
+			
+		}
+
+.navbar li{
+			list-style: none;
+			background-color: lightgray;
+			color: white;
+			font-size: 1.5em;
+		}
+
+
+nav{
+			font-family: arial;
+			color:blue;
+			border:2px solid lightgray;
+			text-align: center;
+			background-color: lightgray;
+			}
+#services_color{
+	color: brown;}
+
+.dropdown nav{
+	font-family: bold;
+	color:white;
+	border:2px solid royalblue;
+	text-align: center;
+	width: 5em;
+	background-color: royalblue;
+	size: 5em;
+		}
+
+.dropdown ul{
+		display:none;
+		list-style:none;
+		margin:0;
+		padding:0;
+		position: absolute;
+		top: 100%;
+		list-style: 0;
+		}
+
+.dropdown:hover ul {
+	display: block;
+	}
+
+.dropdown ul li {
+	border-top: 2px solid royalblue;
+	background-color: white;
+	width: 8em;
+	color: black;
+	font-size: 1em;
+	text-align: left;
+	}
+
+.dropdown ul li:hover{ background-color: powderblue; }
+
+a{text-decoration: none;}
+
+#services_color:hover .dropdown ul{
+	display: block;
+}
+
+@media all {
+        .dropdown ul {
+            display: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+
+        .dropdown:hover ul {
+            display: block;
+        }
+
+        .dropdown ul li {
+            border-top: 2px solid royalblue;
+            background-color: white;
+            width: 8em;
+            color: black;
+            font-size: 1em;
+            text-align: left;
+        }
+
+        .dropdown ul li:hover {
+            background-color: powderblue;
+        }
+    }
+
+@media print{
+	body{
+		background-color: white;
+		color: black;
+	}
+
+	.navbar li{
+		color: black;
+		font-size: 1.2em;
+
+	}
+
+	.header{
+		background-color: white;
+	}
+
+	.dropdown ul{
+		display: block;
+	}
+
+	.dropdown ul li{
+		border: none;
+	}
+}
